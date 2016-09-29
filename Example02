@@ -1,0 +1,26 @@
+/*Will Pascuzzi
+NHS Robotics
+*/
+void hard_fly(); //fast-movey function
+void turn_right() //as written
+int main()
+{
+	hard_fly(); //execute foward
+	turn_right(); //exetute right
+	hard_fly(); //execute foward
+	return 0;
+	//finish
+}
+void hard_fly()
+{
+	//defines the hard_fly function
+	motor(1,100);
+	motor(2,100);
+	//both motors foward 100%
+	msleep(5000); //5 second duration
+}
+void turn_right()
+{
+	motor(2,70); //left motor foward 70%
+	msleep(4000); //4 second duration
+}
